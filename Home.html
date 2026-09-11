@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Shein Clothing</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        /* BODY */
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* HEADER */
+
+        .header {
+            background-color: #222;
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        /* LEFT SIDE */
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+
+        /* HEADER TITLE */
+
+        h1 {
+            color: white;
+            margin: 0;
+            letter-spacing: 3px;
+        }
+
+
+        /* NAVIGATION */
+
+        .navigation {
+            display: flex;
+            align-items: center;
+        }
+
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+
+        .navigation a:hover {
+            background-color: #ff4081;
+            transition: 0.3s;
+        }
+
+
+        /* HEADING */
+
+        h2 {
+            text-align: center;
+            color: #222;
+            margin: 25px;
+        }
+
+
+        /* MAIN CONTAINER */
+
+        .container {
+            width: 94%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 25px;
+        }
+
+
+        /* TOP CARDS */
+
+        .one,
+        .two,
+        .three {
+            width: 30%;
+            min-height: 400px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+
+        /* IMAGES */
+
+        .one img,
+        .two img,
+        .three img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+
+        /* PARAGRAPHS */
+
+        .one p,
+        .two p,
+        .three p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+
+        /* BOTTOM CARDS */
+
+        .four,
+        .five {
+            width: 45%;
+            min-height: 180px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+
+        .four p,
+        .five p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+
+        /* FOOTER */
+
+        .footer {
+            text-align: center;
+            background-color: #222;
+            color: white;
+            margin-top: 40px;
+            padding: 25px;
+            font-size: 20px;
+        }
+
+
+        /* =================================
+           TABLET VERSION
+           SCREEN BELOW 1024px
+        ================================= */
+
+        @media (max-width: 1024px) {
+
+            .one,
+            .two,
+            .three {
+                width: 48%;
+            }
+
+            .four,
+            .five {
+                width: 48%;
+            }
+
+        }
+
+
+        /* =================================
+           MOBILE VERSION
+           SCREEN BELOW 768px
+        ================================= */
+
+        @media (max-width: 768px) {
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+
+
+            .header-left {
+                flex-direction: column;
+                margin-bottom: 15px;
+            }
+
+
+            .logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 60px;
+                height: 60px;
+            }
+
+
+            h1 {
+                font-size: 25px;
+            }
+
+
+            .navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+
+            .navigation a {
+                margin: 5px;
+                font-size: 16px;
+                padding: 8px 12px;
+            }
+
+
+            .container {
+                width: 90%;
+                flex-direction: column;
+            }
+
+
+            .one,
+            .two,
+            .three,
+            .four,
+            .five {
+                width: 100%;
+            }
+
+
+            .one img,
+            .two img,
+            .three img {
+                height: auto;
+            }
+
+
+            h2 {
+                font-size: 22px;
+            }
+
+
+            .footer {
+                font-size: 16px;
+                padding: 15px;
+            }
+
+        }
+
+
+        /* =================================
+           SMALL PHONE VERSION
+           SCREEN BELOW 480px
+        ================================= */
+
+        @media (max-width: 480px) {
+
+            .header {
+                padding: 10px;
+            }
+
+
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+
+
+            h1 {
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+
+
+            h2 {
+                font-size: 18px;
+                margin: 15px;
+            }
+
+
+            .navigation {
+                flex-direction: column;
+                width: 100%;
+            }
+
+
+            .navigation a {
+                width: 80%;
+                text-align: center;
+                margin: 3px;
+                font-size: 15px;
+            }
+
+
+            .container {
+                width: 95%;
+                gap: 15px;
+            }
+
+
+            .one,
+            .two,
+            .three,
+            .four,
+            .five {
+                padding: 10px;
+            }
+
+
+            .one p,
+            .two p,
+            .three p,
+            .four p,
+            .five p {
+                font-size: 15px;
+            }
+
+
+            .footer {
+                font-size: 14px;
+                padding: 12px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="header-left">
+
+            <!-- LOGO -->
+
+            <img src="logo.png" class="logo" alt="Shein Clothing Logo">
+
+
+            <!-- WEBSITE NAME -->
+
+            <h1>SHEIN CLOTHING</h1>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="navigation">
+
+            <a href="home.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contacts</a>
+
+        </div>
+
+
+    </div>
+
+
+    <h2>ORDER TAKING</h2>
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="container">
+
+
+        <div class="one">
+
+            <img src="shein.jpg">
+
+            <p>
+                Welcome to Shein Clothing, where ideas meet creativity.
+                Discover a space designed for inspiration, learning, and growth.
+                Your journey starts here.
+            </p>
+
+        </div>
+
+
+        <div class="two">
+
+            <img src="shein 2.jpg">
+
+            <p>
+                Explore the latest fashion trends at Shein.
+                Find stylish clothing and accessories that match
+                your personality and make you feel confident.
+            </p>
+
+        </div>
+
+
+        <div class="three">
+
+            <img src="shein 3.jpg">
+
+            <p>
+                Shop from a wide selection of fashionable clothes.
+                Shein offers different styles and designs for
+                everyday wear and special occasions.
+            </p>
+
+        </div>
+
+
+        <div class="four">
+
+            <p>
+
+                <b>Easy Ordering</b>
+
+                <br><br>
+
+                Choose your favourite clothing items, select your size,
+                and place your order easily.
+
+            </p>
+
+        </div>
+
+
+        <div class="five">
+
+            <p>
+
+                <b>Fashion and Style</b>
+
+                <br><br>
+
+                Discover new fashion trends and affordable clothing
+                for different occasions. Find a style that suits you.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        WWW.Year2026
+
+    </div>
+
+
+</body>
+
+</html>

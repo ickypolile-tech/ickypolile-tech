@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact SHEIN</title>
+
+    <style>
+
+        /* =========================
+           GENERAL
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            background-color: #222;
+            padding: 10px 8%;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            align-items: center;
+
+            min-height: 100px;
+        }
+
+
+        /* =========================
+           LOGO PHOTO - LEFT
+        ========================= */
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .logo-container img {
+            width: 75px;
+            height: 75px;
+
+            object-fit: contain;
+
+            border-radius: 50%;
+        }
+
+
+        /* =========================
+           SHEIN HEADING - CENTER
+        ========================= */
+
+        .header h1 {
+            color: white;
+
+            text-align: center;
+
+            font-size: 32px;
+
+            letter-spacing: 4px;
+
+            margin: 0;
+        }
+
+
+        /* =========================
+           NAVIGATION - RIGHT
+        ========================= */
+
+        .navigation {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: flex-end;
+
+            gap: 10px;
+        }
+
+
+        .navigation a {
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 17px;
+
+            padding: 10px 15px;
+
+            border-radius: 5px;
+
+            transition: 0.3s;
+        }
+
+
+        .navigation a:hover {
+            background-color: #ff4081;
+        }
+
+
+        /* =========================
+           PAGE HEADING
+        ========================= */
+
+        h2 {
+            text-align: center;
+            color: #222;
+            margin: 25px;
+        }
+
+
+        /* =========================
+           CONTACT SECTION
+        ========================= */
+
+        .contact {
+            width: 80%;
+
+            max-width: 900px;
+
+            margin: 20px auto;
+
+            background-color: white;
+
+            padding: 30px;
+
+            border-radius: 15px;
+
+            text-align: center;
+        }
+
+
+        .contact h3 {
+            color: #ff4081;
+            font-size: 24px;
+        }
+
+
+        .contact p {
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+
+        /* =========================
+           FORM SECTION
+        ========================= */
+
+        .form {
+            width: 80%;
+
+            max-width: 900px;
+
+            margin: 30px auto;
+
+            background-color: white;
+
+            padding: 30px;
+
+            border-radius: 15px;
+        }
+
+
+        .form h2 {
+            margin-top: 0;
+        }
+
+
+        label {
+            display: block;
+
+            margin-top: 15px;
+
+            font-weight: bold;
+        }
+
+
+        input,
+        textarea {
+            width: 100%;
+
+            padding: 12px;
+
+            margin-top: 8px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            font-size: 16px;
+        }
+
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+
+            border-color: #ff4081;
+        }
+
+
+        textarea {
+            height: 120px;
+
+            resize: vertical;
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================= */
+
+        button {
+            background-color: #ff4081;
+
+            color: white;
+
+            border: none;
+
+            padding: 12px 25px;
+
+            margin-top: 20px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            transition: 0.3s;
+        }
+
+
+        button:hover {
+            background-color: #222;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .footer {
+            text-align: center;
+
+            background-color: #222;
+
+            color: white;
+
+            margin-top: 40px;
+
+            padding: 25px;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           TABLET RESPONSIVE
+        ========================= */
+
+        @media (max-width: 900px) {
+
+            .header {
+                padding: 10px 5%;
+            }
+
+
+            .header h1 {
+                font-size: 26px;
+            }
+
+
+            .logo-container img {
+                width: 65px;
+                height: 65px;
+            }
+
+
+            .navigation {
+                gap: 5px;
+            }
+
+
+            .navigation a {
+                font-size: 15px;
+
+                padding: 8px 10px;
+            }
+
+
+            .contact,
+            .form {
+                width: 90%;
+            }
+
+        }
+
+
+        /* =========================
+           MOBILE RESPONSIVE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            /* HEADER */
+
+            .header {
+                display: flex;
+
+                flex-direction: column;
+
+                justify-content: center;
+
+                text-align: center;
+
+                gap: 15px;
+
+                padding: 20px;
+            }
+
+
+            /* LOGO */
+
+            .logo-container {
+                justify-content: center;
+            }
+
+
+            .logo-container img {
+                width: 70px;
+                height: 70px;
+            }
+
+
+            /* SHEIN HEADING */
+
+            .header h1 {
+                font-size: 26px;
+
+                letter-spacing: 3px;
+            }
+
+
+            /* NAVIGATION */
+
+            .navigation {
+                justify-content: center;
+
+                flex-wrap: wrap;
+
+                gap: 5px;
+            }
+
+
+            .navigation a {
+                font-size: 15px;
+
+                padding: 8px 12px;
+            }
+
+
+            /* CONTACT */
+
+            h2 {
+                font-size: 25px;
+            }
+
+
+            .contact,
+            .form {
+                width: 92%;
+
+                padding: 20px;
+            }
+
+
+            .contact h3 {
+                font-size: 21px;
+            }
+
+
+            .contact p {
+                font-size: 15px;
+            }
+
+
+            /* FORM */
+
+            input,
+            textarea {
+                font-size: 15px;
+            }
+
+
+            button {
+                width: 100%;
+
+                padding: 14px;
+            }
+
+        }
+
+
+        /* =========================
+           SMALL MOBILE PHONES
+        ========================= */
+
+        @media (max-width: 400px) {
+
+            .header {
+                padding: 15px 10px;
+            }
+
+
+            .logo-container img {
+                width: 60px;
+                height: 60px;
+            }
+
+
+            .header h1 {
+                font-size: 22px;
+
+                letter-spacing: 2px;
+            }
+
+
+            .navigation a {
+                font-size: 13px;
+
+                padding: 7px 8px;
+            }
+
+
+            h2 {
+                font-size: 22px;
+            }
+
+
+            .contact,
+            .form {
+                width: 95%;
+
+                padding: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <div class="header">
+
+
+        <!-- LOGO PHOTO -->
+
+        <div class="logo-container">
+
+            <img src="logo.png" alt="SHEIN Clothing Logo">
+
+        </div>
+
+
+        <!-- SHEIN HEADING -->
+
+        <h1>SHEIN CLOTHING</h1>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="navigation">
+
+            <a href="home.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="Contact.html">Contact</a>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =========================
+         CONTACT HEADING
+    ========================= -->
+
+    <h2>CONTACT US</h2>
+
+
+    <!-- =========================
+         CONTACT INFORMATION
+    ========================= -->
+
+    <div class="contact">
+
+
+        <h3>GET IN TOUCH</h3>
+
+
+        <p>
+
+            Welcome to the SHEIN Clothing contact page.
+            If you have questions about our products, fashion
+            styles or online shopping, you can contact us using
+            the information below.
+
+        </p>
+
+
+        <p>
+
+            <b>Email:</b> shein@example.com
+
+        </p>
+
+
+        <p>
+
+            <b>Phone:</b> +266 56278888
+
+        </p>
+
+
+        <p>
+
+            <b>Location:</b> Maseru, Lesotho
+
+        </p>
+
+
+    </div>
+
+
+    <!-- =========================
+         CONTACT FORM
+    ========================= -->
+
+    <div class="form">
+
+
+        <h2>SEND US A MESSAGE</h2>
+
+
+        <form>
+
+
+            <label>Name</label>
+
+            <input
+                type="text"
+                placeholder="Enter your name"
+            >
+
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+            >
+
+
+            <label>Message</label>
+
+            <textarea
+                placeholder="Write your message"
+            ></textarea>
+
+
+            <button type="submit">
+
+                SEND MESSAGE
+
+            </button>
+
+
+        </form>
+
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <div class="footer">
+
+        SHEIN CLOTHING
+
+        <br><br>
+
+        © Year 2026
+
+    </div>
+
+
+</body>
+
+</html>
